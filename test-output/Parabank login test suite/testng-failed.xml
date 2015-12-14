@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parabank login test suite]">
+  <parameter name="incorrectusername" value="wrong"/>
+  <parameter name="incorrectpassword" value="credentials"/>
+  <parameter name="correctpassword" value="demo"/>
+  <parameter name="correctusername" value="john"/>
+  <listeners>
+    <listener class-name="com.ontestautomation.extentreports.listener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Login tests(failed)">
+    <classes>
+      <class name="com.ontestautomation.extentreports.tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="failingTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ontestautomation.extentreports.tests.LoginTest -->
+    </classes>
+  </test> <!-- Login tests(failed) -->
+</suite> <!-- Failed suite [Parabank login test suite] -->

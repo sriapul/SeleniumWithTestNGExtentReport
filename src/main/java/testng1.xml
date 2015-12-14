@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parabank login test suite" verbose="1">
+	<listeners>
+		<listener class-name="com.ontestautomation.extentreports.listener.ExtentReporterNG" />
+	</listeners>
+	<parameter name="correctusername" value="john" />
+	<parameter name="correctpassword" value="demo" />
+	<parameter name="incorrectusername" value="wrong" />
+	<parameter name="incorrectpassword" value="credentials" />
+	<test name="Login tests">
+		<packages>
+			<package name="com.ontestautomation.extentreports.tests" />
+		</packages>
+	</test>
+</suite>
